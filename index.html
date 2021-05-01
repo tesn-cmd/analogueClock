@@ -147,7 +147,7 @@
       let minutes = date.getMinutes();
       let hours = date.getHours();
       let session = hours > 12?"PM": "AM";
-      let h = hour < 10?`0${hours}`: hours;
+      let h = hours < 10?`0${hours}`: hours;
       let m = minutes < 10?`0${minutes}`: minutes;
 
       output.innerHTML = `${h}:${m} ${session}`;
